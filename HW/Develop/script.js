@@ -27,16 +27,58 @@ document.getElementById("currentDay").innerHTML = jumbo_time;
 
 var time_blocks = {"time_block_9":9,"time_block_10":10,"time_block_11":11,"time_block_12":12,"time_block_1":13,"time_block_2":14,"time_block_3":15,"time_block_4":16,"time_block_5":17}
 
-var current_time = parseInt(moment().format('h'))
 
-function 
+var current_time = parseInt(moment().format('h'));
 
-//--- color code using a comparison of the time in block with current time
+//--- color code using a comparison of the time in block with current time loopin though every second
+
+function past_color(){
+//    if current_time > time_blocks{keys} 
+console.log(document.getElementById(9))
+
+}
+past_color()
+function color_time_block(){
+        if (current_time > paresInt(document.getElementById(9))){
+            //add class .past
+        }
+        else if (current_time == paresInt(document.getElementById(9))){
+            //add class .present
+        }
+        else (current_time > paresInt(document.getElementById(9))){
+            //add class .future
+        } 
+}
+
+// function future_color(){
+//     if
+// }
+
 // click into a timeblock I can enter an event
-//--- creat on click event listener to the time blocks to have a text field
+//--- creat a target on click event listener to the time blocks to have a text field
+
+// end of for loop
+
 // click the save button for that timeblock the text for that event is saved in local storage
-//--- create on click event for the save button
+//--- create a target on click event for the save button
 // refresh the page the saved events persist
-//--- saved to local sorage then repopulate on refresh
+//--- saved to local sorage then repopulate on refresh using $(document).ready(function () {}
+
+// saveBtn.on("click", function() {
+//     // console.log(this);
+//     var taskInput = $(this).siblings(".description").val();
+//     var timeSlot = $(this).parent().attr("id");
+//     localStorage.setItem(timeSlot, taskInput);
+// }); // end of saveBtn click event
+
+// for (i = 0; i < savedPlans.length; i++) {
+//     var taskInput = localStorage.getItem(savedPlans[i]);
+//     var savedText = $("#" + savedPlans[i]).find("textarea")
+//     savedText.val(taskInput);
+// } // end of for loop
+
+
+
+
 
 
